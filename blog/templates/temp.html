@@ -1,0 +1,13 @@
+<header>
+    <h2>Olá, {{user.username }}!</h2>
+    <ul>
+        <a href="{% url 'sair' %}"><li>Sair</li></a>
+    </ul>
+</header>
+<div class="container">
+    <div class="content">
+        <a href="{% url 'historico-transacoes' %}" class="historico" >Histórico</a> <br><br>
+        <a href="{% url 'url_nova-transacao' %}" class="nova-transacao">Nova Transacao</a><br><br>
+        <a href="{% url 'list' %}" class='Carteira'>Carteira</a><br><br>
+        <a href="" class="nova-categoria">Categoria</a><br><br>
+</div>

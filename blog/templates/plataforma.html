@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllFin</title>
+    <link rel="shortcut icon" href="{% static 'assets/logo/AllFin - Trabalho Neto 7.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/plataforma.css' %}">
+</head>
+
+<body>
+    <div class="pagina-inicial">
+        <header class="cabecalho">
+            <img src="{% static '/assets/logo/AllFin - Trabalho Neto 2.png' %}" alt="Logo da ALLFIN" />
+
+
+            <div class="cabecalho__busca">
+                <div class="busca__fundo">
+                    <input class="busca__input" type="text" placeholder="O que você procura?">
+                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
+                </div>
+            </div>
+        </header>
+        <main class="principal">
+            <section class="menu-lateral">
+                <nav class="menu-lateral__navegacao">
+                    <a href="{% url 'url_plataforma' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
+                    <a href="{% url 'url_nova-transacao' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Nova Transacao</a>
+                    <a href="{% url 'historico-transacoes' %}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Histórico</a>
+                    <a href="{% url 'list' %}"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Anotações</a>
+                    <a href="{% url 'sair' %}"><img src="{% static '/assets/ícones/1x/Mais curtidas - inativo.png' %}">Sair</a>
+                </nav>
+            </section>
+            <section class="conteudo">
+                <section class="banner">
+                    <img class="banner__imagem" src="{% static '/assets/imagens/Banner.png' %}" alt="banner Alura Space">
+                    <h1 class="banner__titulo"> Olá, {{ user.username }}!</h1>
+                    <h2 class="cards__titulo">Seja bem vindo a nossa plataforma!</h2>
+                        <p class="conteudo-secundario-paragrafo1"> Acesse <strong>Nova Transacao</strong> para adicionar uma transação!</p>
+                        <p class="conteudo-secundario-paragrafo2"> Acesse <strong>Histórico</strong> para acessar seu histórico de transações!</p>
+                        <p class="conteudo-secundario-paragrafo3"> Acesse <strong>Anotações</strong> para acessar suas anotações!</p>
+                </section>
+                <section class="galeria">
+                    <div class="cards">
+                        
+                        
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <footer class="rodape">
+        <div class="rodape__icones">
+            <a href="https://www.instagram.com/julio_araujog/" target=”_blank” >
+                <img src="{% static '/assets/ícones/1x/instagram.png' %}" alt="ícone instagram">
+            </a>
+        </div>
+        <p class="rodape__texto">Desenvolvido por ALLFIN</p>
+    </footer>
+</body>
+
+</html>
