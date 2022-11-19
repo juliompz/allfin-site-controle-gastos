@@ -7,4 +7,4 @@ objetivo:
 O site consiste em ajudar o usuário a controlar suas finanças documentando suas transações!
 Possui uma aba de anotações!
 
-video de demonstração do site: 
+video de demonstração do site: https://youtu.be/XwTDSfPonNk
